@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | RINGGA BUDI UTAMA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background moving blobs -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="logo">PORTOFOLIO<span>.</span></div>
+
+
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Dokumen</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+
+
+
+
+    <button id="themeBtn" class="themeBtn" aria-label="toggle theme">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text reveal">
+      <p class="tag">👋 Halo Everyone! My Name :</p>
+      <h1>RINGGA <span>BUDI UTAMA</span></h1>
+      <h2 class="typing"><span id="typingText"></span></h2>
+      <p class="desc">
+        Undergraduate Informatics Engineering Student (International Class) at Politeknik Negeri Malang
+        | UI/UX Designer | Data Analyst | Web Developer
+      </p>
+
+      <div class="btns">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn glass" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-card reveal">
+      <div class="profile">
+        <div class="avatar">
+          <img src="Ringga.jpg" alt="Foto Ringga" />
+        </div>
+
+        <div>
+          <h3>RINGGA BUDI UTAMA</h3>
+          <p>Web Developer • UI Designer</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h4>5+</h4>
+          <p>Projects</p>
+        </div>
+        <div class="stat">
+          <h4>6</h4>
+          <p>Month</p>
+        </div>
+        <div class="stat">
+          <h4>50%</h4>
+          <p>Passion</p>
+        </div>
+      </div>
+
+      <div class="miniLine"></div>
+
+      <!-- Social Links -->
+      <div class="social">
+        <a href="https://github.com/ringgabudiutama/RINGGA-BUDI-UTAMA" target="_blank" rel="noopener noreferrer" title="GitHub">
+          🐙 GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/ringgabudiutama" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          💼 LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/ringgabdy.___" target="_blank" rel="noopener noreferrer" title="Instagram">
+          📸 Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2 class="section-title reveal">About</h2>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <h3>Siapa Saya?</h3>
+        <p>
+          Saya seorang web developer yang fokus membuat website modern,
+          cepat, responsif, dan punya animasi halus.
+          Saya suka desain minimalis tapi tetap “wow”.
+        </p>
+      </div>
+
+      <div class="about-card reveal">
+        <h3>Yang Saya Kerjakan</h3>
+        <ul>
+          <li>✅ Landing page modern</li>
+          <li>✅ Website portfolio</li>
+          <li>✅ UI/UX design</li>
+          <li>✅ Animasi & interaksi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2 class="section-title reveal">Skills</h2>
+
+    <div class="skills-grid reveal">
+      <div class="skill">
+        <div class="skill-top">
+          <span>Public Speaking</span><span>95%</span>
+        </div>
+        <div class="bar"><div class="fill" data-fill="95"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>HTML</span><span>80%</span>
+        </div>
+        <div class="bar"><div class="fill" data-fill="80"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>Java</span><span>85%</span>
+        </div>
+        <div class="bar"><div class="fill" data-fill="85"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>UI UX Design</span><span>80%</span>
+        </div>
+        <div class="bar"><div class="fill" data-fill="80"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title reveal">Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project reveal">
+        <div class="project-top">
+          <h3>Web Portofolio</h3>
+          <span class="badge">JS • Animation</span>
+        </div>
+        <p>Portfolio dengan scroll reveal, typing effect, dan dark mode.</p>
+        <div class="project-actions">
+          <a class="btn small primary" href="#">Demo</a>
+          <a class="btn small glass" href="https://github.com/ringgabudiutama/RINGGA-BUDI-UTAMA" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+<!-- Dokumen Tabs -->
+<section id="gallery" class="section">
+  <h2 class="section-title reveal">Dokumen & Prestasi</h2>
+  <p class="section-sub reveal">
+    Klik kategori untuk melihat gambar prestasi, CV, bisnis, dan sertifikasi.
+  </p>
+
+  <!-- Tabs -->
+  <div class="tabs reveal">
+    <button class="tab-btn active" data-tab="prestasi">🏆 Prestasi</button>
+    <button class="tab-btn" data-tab="cv">📄 CV</button>
+    <button class="tab-btn" data-tab="bisnis">💼 Bisnis</button>
+    <button class="tab-btn" data-tab="sertifikasi">🎓 Sertifikasi</button>
+  </div>
+
+  <!-- Content -->
+  <div class="tab-content">
+
+    <!-- Prestasi -->
+    <div class="tab-panel active" id="prestasi">
+      <div class="tab-grid">
+        <a class="doc-card reveal" href="img/prestasi/prestasi1.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="Prestasi1.jpeg" alt="Prestasi 1">
+          <div class="doc-info">
+            <h3>" 1st Place Speech Contest "</h3>
+            <p>Title: 1st Place – Speech Contest (Internal Competition)
+Issuing Organization: Politeknik Negeri Malang
+Description: Awarded 1st place in an internal speech competition, showcasing strong public speaking and communication skills.</p>
+          </div>
+        </a>
+
+        <a class="doc-card reveal" href="img/prestasi/prestasi2.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="Prestasi2.jpeg" alt="Prestasi 2">
+          <div class="doc-info">
+            <h3> " 1st Place and Hopeful Winner Speech Contest "</h3>
+            <p>Title: 1st Place & Hopeful Winner – Speech Contest
+Issuing Organization: Krensa Institute
+Description: Achieved 1st place in a speech contest organized by Krensa Institute, demonstrating strong public speaking and communication skills.</p>
+          </div>
+        </a>
+
+        <a class="doc-card reveal" href="img/prestasi/prestasi3.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="Prestasi3.jpeg" alt="Prestasi 3">
+          <div class="doc-info">
+            <h3>" 1st Place Indonesia Generation Ambassador "</h3>
+            <p>Title: 1st Place – Duta Generasi Indonesia (Generasi Indonesia Ambassador)
+Issuing Organization: Generasi Indonesia
+Description: Awarded 1st place as Duta Generasi Indonesia, demonstrating strong communication, leadership, and ambassadorial skills.</p>
+          </div>
+        </a>
+
+        <!-- List Prestasi (tanpa foto) -->
+<div class="achievement-box reveal">
+  <h3>📌 Prestasi Duta </h3>
+  <ul class="achievement-list">
+    <li>
+      <span class="ach-title"></span> Duta Kesehatan Jombang</span>
+      <span class="ach-meta">• 2023• Regency</span>
+    </li>
+    <li>
+      <span class="ach-title">Duta Genre Jombang</span>
+      <span class="ach-meta">• 2023 • Regency</span>
+    </li>
+    <li>
+      <span class="ach-title">Duta Budaya Jawa Timur </span>
+      <span class="ach-meta">• 2023 • Province</span>
+    </li>
+    <li>
+      <span class="ach-title"> Duta Generation Indonesia</span>
+      <span class="ach-meta">• 2024 • National</span>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <!-- CV -->
+    <div class="tab-panel" id="cv">
+      <div class="tab-grid">
+
+        <!-- jika CV kamu PDF, pakai card ini -->
+        <a class="doc-card reveal" href="cv.pdf" target="_blank" rel="noopener noreferrer">
+          <img src="cv.pdf" >
+          <div class="doc-info">
+            <h3>" CV Terbaru "</h3>
+            <p>Klik untuk buka / download PDF</p>
+          </div>
+        </a>
+
+        <!-- kalau CV kamu berupa gambar, bisa tambahin lagi -->
+        <a class="doc-card reveal" href="img/cv/cv1.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="img/cv/cv1.jpg" alt="CV Halaman 1">
+          <div class="doc-info">
+            <h3>CV (Gambar)</h3>
+            <p>Preview CV halaman 1</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bisnis -->
+    <div class="tab-panel" id="bisnis">
+      <div class="tab-grid">
+        <a class="doc-card reveal" href="img/bisnis/bisnis1.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="img/bisnis/bisnis1.jpg" alt="Bisnis 1">
+          <div class="doc-info">
+            <h3>Bisnis 1</h3>
+            <p>Dokumentasi / portofolio usaha</p>
+          </div>
+        </a>
+
+        <a class="doc-card reveal" href="img/bisnis/bisnis2.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="img/bisnis/bisnis2.jpg" alt="Bisnis 2">
+          <div class="doc-info">
+            <h3>Bisnis 2</h3>
+            <p>Dokumentasi / portofolio usaha</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sertifikasi -->
+    <div class="tab-panel" id="sertifikasi">
+      <div class="tab-grid">
+        <a class="doc-card reveal" href="img/sertifikasi/sertif1.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="img/sertifikasi/sertif1.jpg" alt="Sertifikat 1">
+          <div class="doc-info">
+            <h3>Sertifikat 1</h3>
+            <p>Nama pelatihan / kursus</p>
+          </div>
+        </a>
+
+        <a class="doc-card reveal" href="img/sertifikasi/sertif2.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="img/sertifikasi/sertif2.jpg" alt="Sertifikat 2">
+          <div class="doc-info">
+            <h3>Sertifikat 2</h3>
+            <p>Nama pelatihan / kursus</p>
+          </div>
+        </a>
+
+        <a class="doc-card reveal" href="img/sertifikasi/sertif3.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="img/sertifikasi/sertif3.jpg" alt="Sertifikat 3">
+          <div class="doc-info">
+            <h3>Sertifikat 3</h3>
+            <p>Nama pelatihan / kursus</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2 class="section-title reveal">Contact</h2>
+
+    <div class="contact-card reveal">
+      <p>Want to collaborate or need a website? Send a message :</p>
+
+      <form class="contact-form" onsubmit="return fakeSubmit(event)">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="4" placeholder="Task..." required></textarea>
+        <button class="btn primary" type="submit">Send</button>
+        <p id="formMsg" class="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ringga Budi Utama</p>
+  </footer>
+
+  <!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" class="musicBtn">Music</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
