@@ -7,10 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+ <canvas id="stars"></canvas>
+
+ 
+
 
   <!-- Background moving blobs -->
   <div class="blob blob1"></div>
   <div class="blob blob2"></div>
+
+ 
+
 
   <!-- Navbar -->
   <header class="nav">
@@ -36,8 +43,41 @@
 
   <!-- Hero -->
   <section id="home" class="hero">
+
+ <!-- INTRO SECTION (Gantungan) -->
+<section id="intro" class="intro">
+  <div class="intro-inner">
+  
+  
+    <!-- Hanger di tengah -->
+    <div class="hanger-intro">
+      <div class="strap-intro"></div>
+      <div class="clip-intro"></div>
+
+      <div class="tag-intro">
+        <div class="taghead-intro">
+          <div class="taghole-intro"></div>
+          <div class="tagtitle-intro">Owner</div>
+        </div>
+
+        <div class="tagbody-intro">
+       <div class="tagphoto-intro">
+  <img src="ringga.jpg" alt="Foto Ringga">
+</div>
+
+          <div class="tagname-intro">RINGGA BUDI UTAMA</div>
+          <div class="tagrole-intro">Web Developer • UI Designer</div>
+        </div>
+      </div>
+    </div>
+
+   
+</section>
+
+
     <div class="hero-text reveal">
-      <p class="tag">👋 Halo Everyone! My Name :</p>
+      <p class="hero-tag">👋 Halo Everyone! My Name :</p>
+
       <h1>RINGGA <span>BUDI UTAMA</span></h1>
       <h2 class="typing"><span id="typingText"></span></h2>
       <p class="desc">
@@ -51,47 +91,30 @@
       </div>
     </div>
 
-    <div class="hero-card reveal">
-      <div class="profile">
-        <div class="avatar">
-          <img src="Ringga.jpg" alt="Foto Ringga" />
-        </div>
+   
+  <div class="hero-card-left">
+    <div class="stat">
+      <h4>5+</h4>
+      <p>Projects</p>
+    </div>
 
-        <div>
-          <h3>RINGGA BUDI UTAMA</h3>
-          <p>Web Developer • UI Designer</p>
-        </div>
-      </div>
+    <div class="stat">
+      <h4>6</h4>
+      <p>Month</p>
+    </div>
 
-      <div class="stats">
-        <div class="stat">
-          <h4>5+</h4>
-          <p>Projects</p>
-        </div>
-        <div class="stat">
-          <h4>6</h4>
-          <p>Month</p>
-        </div>
-        <div class="stat">
-          <h4>50%</h4>
-          <p>Passion</p>
-        </div>
-      </div>
+    <div class="stat">
+      <h4>50%</h4>
+      <p>Passion</p>
+    </div>
+  </div>
 
-      <div class="miniLine"></div>
+ 
+    </a>
+  </div>
 
-      <!-- Social Links -->
-      <div class="social">
-        <a href="https://github.com/ringgabudiutama/RINGGA-BUDI-UTAMA" target="_blank" rel="noopener noreferrer" title="GitHub">
-          🐙 GitHub
-        </a>
+</div>
 
-        <a href="https://www.linkedin.com/in/ringgabudiutama" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          💼 LinkedIn
-        </a>
-
-        <a href="https://www.instagram.com/ringgabdy.___" target="_blank" rel="noopener noreferrer" title="Instagram">
-          📸 Instagram
         </a>
       </div>
     </div>
@@ -157,6 +180,32 @@
     </div>
   </section>
 
+  <!-- CV -->
+<section id="cv" class="section">
+  <h2 class="section-title reveal">Curriculum Vitae</h2>
+  <p class="section-sub reveal">
+   You can view or download my latest CV through the button below.
+  <div class="cv-card reveal">
+    <div class="cv-left">
+      <h3>📄 CV - Ringga Budi Utama</h3>
+      <p>
+       The latest CV contains a summary of profile, education, experience, skills, and projects.
+      </p>
+    </div>
+
+    <div class="cv-actions">
+      <a class="btn primary" href="cv.pdf" download>
+        ⬇ Download CV
+      </a>
+
+      <a class="btn glass" href="cv.pdf" target="_blank" rel="noopener noreferrer">
+        👁 View CV
+      </a>
+    </div>
+  </div>
+</section>
+
+
   <!-- Projects -->
   <section id="projects" class="section">
     <h2 class="section-title reveal">Projects</h2>
@@ -186,7 +235,7 @@
   <!-- Tabs -->
   <div class="tabs reveal">
     <button class="tab-btn active" data-tab="prestasi">🏆 Prestasi</button>
-    <button class="tab-btn" data-tab="cv">📄 CV</button>
+   
     <button class="tab-btn" data-tab="bisnis">💼 Bisnis</button>
     <button class="tab-btn" data-tab="sertifikasi">🎓 Sertifikasi</button>
   </div>
@@ -227,28 +276,7 @@ Description: Awarded 1st place as Duta Generasi Indonesia, demonstrating strong 
           </div>
         </a>
 
-        <!-- List Prestasi (tanpa foto) -->
-<div class="achievement-box reveal">
-  <h3>📌 Prestasi Duta </h3>
-  <ul class="achievement-list">
-    <li>
-      <span class="ach-title"></span> Duta Kesehatan Jombang</span>
-      <span class="ach-meta">• 2023• Regency</span>
-    </li>
-    <li>
-      <span class="ach-title">Duta Genre Jombang</span>
-      <span class="ach-meta">• 2023 • Regency</span>
-    </li>
-    <li>
-      <span class="ach-title">Duta Budaya Jawa Timur </span>
-      <span class="ach-meta">• 2023 • Province</span>
-    </li>
-    <li>
-      <span class="ach-title"> Duta Generation Indonesia</span>
-      <span class="ach-meta">• 2024 • National</span>
-    </li>
-  </ul>
-</div>
+   
 
       </div>
     </div>
@@ -302,15 +330,15 @@ Description: Awarded 1st place as Duta Generasi Indonesia, demonstrating strong 
     <div class="tab-panel" id="sertifikasi">
       <div class="tab-grid">
         <a class="doc-card reveal" href="img/sertifikasi/sertif1.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="img/sertifikasi/sertif1.jpg" alt="Sertifikat 1">
+          <img src="SERTIFIKAT1.jpg" alt="Sertifikat 1">
           <div class="doc-info">
-            <h3>Sertifikat 1</h3>
-            <p>Nama pelatihan / kursus</p>
+            <h3>" Certificate 1 "</h3>
+            <p>Certificate Public Speaking - Komunitas Berani Bicara Indonesia</p>
           </div>
         </a>
 
         <a class="doc-card reveal" href="img/sertifikasi/sertif2.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="img/sertifikasi/sertif2.jpg" alt="Sertifikat 2">
+          <img src="SERTIFIKAT2.jpg" alt="Sertifikat 2">
           <div class="doc-info">
             <h3>Sertifikat 2</h3>
             <p>Nama pelatihan / kursus</p>
@@ -329,6 +357,100 @@ Description: Awarded 1st place as Duta Generasi Indonesia, demonstrating strong 
 
   </div>
 </section>
+
+<!-- Komunitas -->
+<section id="community" class="section">
+  <h2 class="section-title reveal">Community</h2>
+  <p class="section-sub reveal">
+   Documentation of my community activities, events, and experiences.
+  </p>
+
+  <div class="community-grid">
+    <!-- Foto 1 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan1.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="komunitas1 (2).jpeg" alt="Kegiatan Komunitas 1">
+      <div class="community-info">
+        <h3>" POLINEMA MENGAJAR "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    <!-- Foto 2 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan2.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS2.jpeg" alt="Kegiatan Komunitas 2">
+      <div class="community-info">
+        <h3>" INFORMATION TECHNOLOGY DEPARTMENT ENGLISH COMMUNITY "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    <!-- Foto 3 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS 3.jpeg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" REMAJA MASJID AR - RIDHO "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    <!-- Foto 4 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS 4.jpeg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" WORKSHOP & RISET INFORMATIKA "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    <!-- Foto 5 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS5.jpeg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" IKATAN MAHASISWA JOMBANG "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    <!-- Foto 6 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS6.jpg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" BOYS 2 CAMP KRESNA INSTITUTE "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    <!-- Foto 7 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS7.jpg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" KRESNA INSTITUTE "</h3>
+        <p></p>
+      </div>
+    </a>
+
+    
+    <!-- Foto 8 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS8.jpeg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" PAK BAGUS EDUCATION  "</h3>
+        <p></p>
+      </div>
+    </a>
+
+     <!-- Foto 8 -->
+    <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="KOMUNITAS9.jpg" alt="Kegiatan Komunitas 3">
+      <div class="community-info">
+        <h3>" IT CLASS 1I "</h3>
+        <p></p>
+      </div>
+    </a>
+    <!-- Tambah lagi kalau mau -->
+  </div>
+</section>
+
 
 
     </div>
