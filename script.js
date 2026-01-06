@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!hash || !hash.startsWith("#")) return;
       showPage(hash);
       history.pushState(null, "", hash);
+
+      // close mobile menu when click nav
+      closeMobileMenu();
     });
   });
 
@@ -53,12 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       showPage(hash);
       history.pushState(null, "", hash);
+
+      // close mobile menu when click
+      closeMobileMenu();
     });
   });
 
   window.addEventListener("popstate", () => {
     const hash = window.location.hash || "#home";
     showPage(hash);
+    closeMobileMenu();
   });
 
   showPage(window.location.hash || "#home");
@@ -146,13 +153,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
         projectCards.forEach(card => {
           const cat = card.getAttribute("data-cat");
-          if (filter === "all" || filter === cat) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
+          card.style.display = (filter === "all" || filter === cat) ? "block" : "none";
         });
       });
+    });
+  }
+
+  /* =========================
+     MOBILE MENU TOGGLE
+  ========================= */
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  function closeMobileMenu(){
+    if (!menuBtn || !mobileMenu) return;
+    mobileMenu.classList.remove("show");
+    menuBtn.textContent = "☰";
+  }
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+      menuBtn.textContent = mobileMenu.classList.contains("show") ? "✕" : "☰";
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => closeMobileMenu());
+    });
+
+    window.addEventListener("click", (e) => {
+      if (!mobileMenu.classList.contains("show")) return;
+      if (mobileMenu.contains(e.target) || menuBtn.contains(e.target)) return;
+      closeMobileMenu();
+    });
+  }
+
+  /* =========================
+     MUSIC BUTTON (OPTIONAL)
+  ========================= */
+  const bgMusic = document.getElementById("bgMusic");
+  const musicBtn = document.getElementById("musicBtn");
+  let isPlaying = false;
+
+  if (bgMusic && musicBtn) {
+    musicBtn.addEventListener("click", async () => {
+      try {
+        if (!isPlaying) {
+          await bgMusic.play();
+          isPlaying = true;
+          musicBtn.textContent = "Pause";
+          musicBtn.classList.add("playing");
+        } else {
+          bgMusic.pause();
+          isPlaying = false;
+          musicBtn.textContent = "Music";
+          musicBtn.classList.remove("playing");
+        }
+      } catch (err) {
+        alert("Browser memblokir autoplay. Klik tombol Music untuk mulai.");
+      }
     });
   }
 
@@ -188,10 +247,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         ctx.beginPath();
         ctx.arc(st.x, st.y, st.r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(0,0,0,0.12)";
-        if (!document.body.classList.contains("light")) {
-          ctx.fillStyle = "rgba(255,255,255,0.55)";
-        }
+        ctx.fillStyle = document.body.classList.contains("light")
+          ? "rgba(0,0,0,0.12)"
+          : "rgba(255,255,255,0.55)";
         ctx.fill();
       }
       requestAnimationFrame(animate);
@@ -199,30 +257,3 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
   }
 });
-
-/* =========================
-   MUSIC BUTTON
-========================= */
-const bgMusic = document.getElementById("bgMusic");
-const musicBtn = document.getElementById("musicBtn");
-let isPlaying = false;
-
-if (bgMusic && musicBtn) {
-  musicBtn.addEventListener("click", async () => {
-    try {
-      if (!isPlaying) {
-        await bgMusic.play();
-        isPlaying = true;
-        musicBtn.textContent = "Pause";
-        musicBtn.classList.add("playing");
-      } else {
-        bgMusic.pause();
-        isPlaying = false;
-        musicBtn.textContent = "Music";
-        musicBtn.classList.remove("playing");
-      }
-    } catch (err) {
-      alert("Browser memblokir autoplay. Klik tombol Music untuk mulai.");
-    }
-  });
-}
