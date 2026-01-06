@@ -4,238 +4,164 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio | RINGGA BUDI UTAMA</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <!-- Canvas Stars -->
+<body class="light">
+
+  <!-- Background -->
   <canvas id="stars"></canvas>
-
-  <!-- Background blobs -->
   <div class="blob blob1"></div>
   <div class="blob blob2"></div>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <header class="nav">
-    <div class="logo">PORTOFOLIO<span>.</span></div>
+    <div class="nav-left">
+      <div class="logo">RINGGA<span>.</span></div>
+      <div class="nav-badge">Portfolio</div>
+    </div>
 
     <nav class="nav-menu">
       <a href="#home" class="nav-link active">Home</a>
       <a href="#about" class="nav-link">About</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#projects" class="nav-link">Projects</a>
-      <a href="#gallery" class="nav-link">Dokumen</a>
+      <a href="#gallery" class="nav-link">Docs</a>
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
 
     <div class="nav-actions">
-      <button id="themeBtn" class="themeBtn" aria-label="toggle theme">🌙</button>
+      <button id="themeBtn" class="themeBtn" aria-label="toggle theme">☀️</button>
+      <a href="#contact" class="btn primary nav-jump">Hire Me</a>
     </div>
   </header>
 
-  <!-- MAIN WRAPPER (Slide Pages) -->
+  <!-- MAIN -->
   <main class="pages">
 
-    <!-- ✅ HOME SLIDE -->
+    <!-- ✅ HOME (LIKE SAMPLE) -->
     <section id="home" class="page active">
-      <div class="hero hero-3col">
+      <div class="homeCompany">
 
-        <!-- LEFT: DRAGGABLE HANGER + CHART -->
-        <div class="hero-left">
-          <div class="hanger-wrap">
-            <div id="hanger" class="hanger-intro draggable">
-              <div class="strap-intro"></div>
-              <div class="clip-intro"></div>
+        <!-- LEFT TEXT -->
+        <div class="homeLeft reveal">
+          <p class="homeHello">Hey, I'm <span>Ringga Budi Utama</span></p>
 
-              <div class="tag-intro big-tag">
-                <div class="taghead-intro">
-                  <div class="taghole-intro"></div>
-                  <div class="tagtitle-intro">Owner</div>
-                </div>
+          <h1 class="homeRole">A WEB DEVELOPER</h1>
+          <p class="homeSubrole">with UI/UX & Graphic Design Skills</p>
 
-                <div class="tagbody-intro">
-                  <div class="tagphoto-intro big-photo">
-                    <img src="ringga.jpg" alt="Foto Ringga">
-                  </div>
+          <p class="homePortfolio">
+            And this is my <span>Portfolio</span>
+          </p>
 
-                  <div class="tagname-intro big-name">RINGGA BUDI UTAMA</div>
-                  <div class="tagrole-intro big-role">Web Developer • UI Designer</div>
-
-                  <div class="tag-mini">
-                    <span>📍 Malang</span>
-                    <span>🌐 Open to Work</span>
-                  </div>
-
-                  <div class="tag-actions">
-                    <a class="miniBtn nav-jump" href="#contact">Hire Me</a>
-                    <a class="miniBtn ghost nav-jump" href="#gallery">See Docs</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p class="drag-hint">💡 Drag the tag card</p>
-
-            <!-- ✅ Visitor Chart (di bawah gantungan) -->
-            <div class="glassBox chartBox reveal">
-              <div class="chartTop">
-                <h3>📈 Monthly Visitors</h3>
-                <div class="chartMeta">
-                  <span class="dot"></span>
-                  <span id="chartTotal">Total: —</span>
-                </div>
-              </div>
-
-              <div class="chartCanvasWrap">
-                <canvas id="visitorChart"></canvas>
-              </div>
-
-              <div class="chartBottom">
-                <button class="chip small" data-range="6">Last 6 months</button>
-                <button class="chip small active" data-range="12">Last 12 months</button>
-                <button class="chip small" data-range="all">All</button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- CENTER: CLOCK + STATS + HIGHLIGHTS -->
-        <div class="hero-mid">
-          <div class="glassBox clockBox">
-            <div class="clockTop">
-              <div class="clockTitle">⌚ Digital Clock</div>
-              <div class="clockDate" id="clockDate">—</div>
-            </div>
-            <div class="clockTime" id="clockTime">00:00:00</div>
-            <div class="clockZone" id="clockZone">GMT+7</div>
-          </div>
-
-          <div class="statsGrid">
-            <div class="stat">
-              <h4>5+</h4>
+          <div class="homeMiniStats">
+            <div class="miniStat">
+              <h3>5+</h3>
               <p>Projects</p>
             </div>
-
-            <div class="stat">
-              <h4>6</h4>
-              <p>Months</p>
-            </div>
-
-            <div class="stat">
-              <h4>99%</h4>
+            <div class="miniStat">
+              <h3>99%</h3>
               <p>Growth</p>
             </div>
           </div>
 
-          <div class="glassBox highlightBox">
-            <h3>✨ Quick Highlights</h3>
-            <ul>
-              <li>🏆 Speech Contest Winner</li>
-              <li>🎤 Public Speaker & Ambassador</li>
-              <li>🎨 UI/UX & Web Development</li>
-              <li>📊 Data Analyst Enthusiast</li>
-            </ul>
+          <div class="homeActions">
+            <a class="btn primary nav-jump" href="#projects">View Projects</a>
+            <a class="btn glass nav-jump" href="#contact">Contact</a>
           </div>
         </div>
 
-        <!-- RIGHT: TEXT + AI -->
-        <div class="hero-right">
-          <div class="hero-text reveal">
-            <p class="hero-tag">👋 Halo Everyone! My Name :</p>
+        <!-- CENTER PHOTO -->
+        <div class="homeCenter reveal">
+          <div class="heroFrame">
+            <img src="Ringga.jpg" alt="Ringga Budi Utama">
+          </div>
+          <a class="scrollDown nav-jump" href="#about">SCROLL DOWN</a>
+        </div>
 
-            <h1 class="big-hero-title">RINGGA <span>BUDI UTAMA</span></h1>
+        <!-- RIGHT EXPERIENCE / SERVICES -->
+        <div class="homeRight reveal">
+          <h2 class="rightTitle">OPEN JOB WORK</h2>
 
-            <h2 class="typing big-typing"><span id="typingText"></span></h2>
+          <div class="rightList">
+            <div class="rightItem">
+              <h3>UI/UX Designer</h3>
+              <p>Figma • Prototype • Design System</p>
+            </div>
 
-            <p class="desc big-desc">
-              Undergraduate Informatics Engineering Student (International Class) at Politeknik Negeri Malang.
-              I build modern websites, UI/UX designs, and data-based insights that look premium and work fast.
-            </p>
+            <div class="rightItem">
+              <h3>Web Developer</h3>
+              <p>HTML • CSS • JavaScript • Responsive</p>
+            </div>
 
-            <div class="btns">
-              <a class="btn primary nav-jump" href="#projects">View Projects</a>
-              <a class="btn glass nav-jump" href="#contact">Contact</a>
+            <div class="rightItem">
+              <h3>Graphic Designer</h3>
+              <p>Branding • Social Media • Visual Identity</p>
+            </div>
+
+            <div class="rightItem">
+              <h3>Public Speaker</h3>
+              <p>MC • Moderator • Presenter</p>
             </div>
           </div>
 
-          <!-- ✅ AI SERVICE HELPER -->
-          <div class="aiCard reveal">
-            <div class="aiTop">
-              <div class="aiTitle">🤖 AI Service Helper</div>
-              <div class="aiSub">Tanya layanan yang tersedia</div>
-            </div>
-
-            <div class="aiQuick">
-              <button class="chip" data-q="Saya butuh website portfolio">Website</button>
-              <button class="chip" data-q="Saya butuh UI/UX design untuk aplikasi">UI/UX</button>
-              <button class="chip" data-q="Saya butuh joki tugas coding">Joki</button>
-              <button class="chip" data-q="Saya butuh desain sosial media">Social Media</button>
-              <button class="chip" data-q="Saya ingin tahu semua layanan yang tersedia">Semua layanan</button>
-            </div>
-
-            <div class="aiChat">
-              <div class="aiMsg bot">
-                Halo 👋 Aku asisten Ringga. Mau cari layanan apa?
-              </div>
-            </div>
-
-            <div class="aiInputRow">
-              <input id="aiInput" type="text" placeholder="Contoh: saya butuh website toko online..." />
-              <button id="aiSend" class="aiSend">Send</button>
-            </div>
-          </div>
-
-          <!-- INFO BAR -->
-          <div class="infoBar reveal">
-            <div class="infoItem">📩 <span>Fast Response</span></div>
-            <div class="infoItem">⚡ <span>Clean UI</span></div>
-            <div class="infoItem">✅ <span>Professional</span></div>
+          <div class="rightActions">
+            <a class="btn glass nav-jump" href="#gallery">See Documents</a>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ✅ ABOUT SLIDE -->
+    <!-- ✅ ABOUT -->
     <section id="about" class="page">
-      <div class="section">
+      <div class="section container">
         <h2 class="section-title reveal">About</h2>
 
-        <div class="about-grid">
-          <div class="about-card reveal">
-            <h3>ABOUT ME</h3>
+        <div class="aboutGrid">
+          <div class="glassBox reveal">
+            <h3>Professional Summary</h3>
             <p>
-              I’m a Web Developer & Designer focused on building functional, user-friendly websites and digital visuals with strong identity.
-              I handle projects from planning and design to implementation delivering professional, impactful results.
+              I am a Web Developer & Designer focused on creating clean and scalable digital products.
+              My work emphasizes structure, performance, and a strong visual identity.
               <br><br>
-              I hold multiple certifications and actively take part as a public speaker and ambassador, strengthening my communication,
-              leadership, and teamwork skills.
-              <br><br>
-              Currently, I’m deepening my skills in web development and informatics, and I’m open to internship, freelance,
-              or full-time opportunities in web and design.
+              I also actively join public speaking and ambassador programs—improving communication,
+              leadership, and collaboration skills.
             </p>
+
+            <div class="aboutPoints">
+              <div class="point">✅ Corporate UI & Clean Layout</div>
+              <div class="point">✅ Mobile First Responsive</div>
+              <div class="point">✅ UI/UX Flow + Prototype</div>
+              <div class="point">✅ Branding & Social Media Design</div>
+            </div>
           </div>
 
-          <div class="about-card reveal">
-            <h3>Receive Service :</h3>
-            <ul>
-              <li>ALL DESIGNER</li>
-              <li>WEBSITE</li>
-              <li>DUTY JOCKEY</li>
-              <li>SOCIAL MEDIA SPECIALIST</li>
+          <div class="glassBox reveal">
+            <h3>Quick Info</h3>
+            <ul class="aboutList">
+              <li><b>Full Name:</b> Ringga Budi Utama</li>
+              <li><b>Location:</b> Malang, Indonesia</li>
+              <li><b>Role:</b> Web Developer • UI/UX Designer</li>
+              <li><b>Status:</b> Open to Work</li>
             </ul>
+
+            <div class="aboutCTA">
+              <a href="#contact" class="btn primary nav-jump">Work With Me</a>
+              <a href="#projects" class="btn glass nav-jump">See My Work</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ✅ SKILLS SLIDE -->
+    <!-- ✅ SKILLS -->
     <section id="skills" class="page">
-      <div class="section">
+      <div class="section container">
         <h2 class="section-title reveal">Skills</h2>
 
-        <div class="skills-grid reveal">
+        <div class="skillsGrid reveal">
           <div class="skill">
             <div class="skill-top">
               <span>Public Speaking</span><span>95%</span>
@@ -245,95 +171,130 @@
 
           <div class="skill">
             <div class="skill-top">
-              <span>HTML</span><span>80%</span>
-            </div>
-            <div class="bar"><div class="fill" data-fill="80"></div></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-top">
-              <span>Java</span><span>85%</span>
+              <span>HTML / CSS</span><span>85%</span>
             </div>
             <div class="bar"><div class="fill" data-fill="85"></div></div>
           </div>
 
           <div class="skill">
             <div class="skill-top">
-              <span>UI UX Design</span><span>80%</span>
+              <span>JavaScript</span><span>80%</span>
             </div>
             <div class="bar"><div class="fill" data-fill="80"></div></div>
           </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>UI UX Design</span><span>85%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="85"></div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ✅ PROJECTS SLIDE -->
+    <!-- ✅ PROJECTS -->
     <section id="projects" class="page">
-      <div class="section">
+      <div class="section container">
         <h2 class="section-title reveal">Projects</h2>
 
         <p class="section-sub reveal" style="text-align:center; max-width:820px; margin:0 auto;">
-          Here are several works and projects I’ve built. (Silakan ganti card ini dengan project asli kamu.)
+          Projects are grouped into categories to help HRD review skills faster: Web, UI/UX, and Design.
         </p>
 
-        <div class="projects-grid">
-          <div class="project-card reveal">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio website with modern UI and smooth animation.</p>
-            <div class="project-actions">
-              <a class="btn primary" href="#" target="_blank">View</a>
-              <a class="btn glass" href="#" target="_blank">Source</a>
+        <div class="projectTabs reveal">
+          <button class="tabP active" data-filter="all">All</button>
+          <button class="tabP" data-filter="web">Web</button>
+          <button class="tabP" data-filter="uiux">UI/UX</button>
+          <button class="tabP" data-filter="design">Design</button>
+        </div>
+
+        <div class="projectsGrid" id="projectsGrid">
+
+          <div class="projectCard reveal" data-cat="web">
+            <div class="projectThumb">
+             
+            </div>
+            <div class="projectBody">
+              <h3>Corporate Portfolio Website</h3>
+              <p>Website portfolio corporate clean, fast, and responsive.</p>
+              <div class="projectTags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="projectActions">
+                <a class="btn primary" href="#" target="_blank">Live</a>
+                <a class="btn glass" href="#" target="_blank">Source</a>
+              </div>
             </div>
           </div>
 
-          <div class="project-card reveal">
-            <h3>UI/UX Design</h3>
-            <p>Mobile and web design projects with user-centered approach.</p>
-            <div class="project-actions">
-              <a class="btn primary" href="#" target="_blank">View</a>
-              <a class="btn glass" href="#" target="_blank">Source</a>
+          <div class="projectCard reveal" data-cat="uiux">
+            <div class="projectThumb">
+             
+            </div>
+            <div class="projectBody">
+              <h3>Mobile App UI/UX</h3>
+              <p>Clean UI/UX design with user flow and prototype.</p>
+              <div class="projectTags">
+                <span>Figma</span><span>UX</span><span>Prototype</span>
+              </div>
+              <div class="projectActions">
+                <a class="btn primary" href="#" target="_blank">View</a>
+                <a class="btn glass" href="#" target="_blank">Prototype</a>
+              </div>
             </div>
           </div>
 
-          <div class="project-card reveal">
-            <h3>Data Dashboard</h3>
-            <p>Dashboard for analysis using charts and data visualization.</p>
-            <div class="project-actions">
-              <a class="btn primary" href="#" target="_blank">View</a>
-              <a class="btn glass" href="#" target="_blank">Source</a>
+          <div class="projectCard reveal" data-cat="design">
+            <div class="projectThumb">
+            
+            </div>
+            <div class="projectBody">
+              <h3>Social Media Branding</h3>
+              <p>Professional design content for branding and promotion.</p>
+              <div class="projectTags">
+                <span>Branding</span><span>Visual</span><span>Content</span>
+              </div>
+              <div class="projectActions">
+                <a class="btn primary" href="#" target="_blank">Preview</a>
+                <a class="btn glass" href="#" target="_blank">More</a>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ✅ DOKUMEN SLIDE (TAB SYSTEM) -->
+    <!-- ✅ DOCS -->
     <section id="gallery" class="page">
-      <div class="section">
-        <h2 class="section-title reveal">Dokumen & Portofolio</h2>
+      <div class="section container">
+        <h2 class="section-title reveal">Documents</h2>
+
         <p class="section-sub reveal" style="text-align:center; max-width:900px; margin:0 auto;">
-          Pilih kategori dokumen untuk melihat detail: Prestasi, CV, Komunitas, Sertifikasi, dan Bisnis.
+          CV, achievements, certifications, and community activities to support my professional portfolio.
         </p>
 
         <div class="doc-tabs reveal">
-          <button class="tab-btn active" data-tab="prestasi">🏆 Prestasi</button>
+          <button class="tab-btn active" data-tab="prestasi">🏆 Achievements</button>
           <button class="tab-btn" data-tab="cv">📄 CV</button>
-          <button class="tab-btn" data-tab="komunitas">👥 Komunitas</button>
-          <button class="tab-btn" data-tab="sertifikasi">🎓 Sertifikasi</button>
-          <button class="tab-btn" data-tab="bisnis">💼 Bisnis</button>
+          <button class="tab-btn" data-tab="komunitas">👥 Community</button>
+          <button class="tab-btn" data-tab="sertifikasi">🎓 Certification</button>
+          <button class="tab-btn" data-tab="bisnis">💼 Business</button>
         </div>
 
+        <!-- Achievements -->
         <div class="tab-panel active" id="prestasi">
           <div class="tab-grid">
-            <a class="doc-card reveal" href="img/prestasi/prestasi1.jpg" target="_blank">
+            <a class="doc-card reveal" href="Prestasi1.jpeg" target="_blank">
               <img src="Prestasi1.jpeg" alt="Prestasi 1">
               <div class="doc-info">
                 <h3>1st Place Speech Contest</h3>
-                <p>Politeknik Negeri Malang • Internal Competition</p>
+                <p>Politeknik Negeri Malang • Internal</p>
               </div>
             </a>
 
-            <a class="doc-card reveal" href="img/prestasi/prestasi2.jpg" target="_blank">
+            <a class="doc-card reveal" href="Prestasi2.jpeg" target="_blank">
               <img src="Prestasi2.jpeg" alt="Prestasi 2">
               <div class="doc-info">
                 <h3>1st Place & Hopeful Winner</h3>
@@ -341,7 +302,7 @@
               </div>
             </a>
 
-            <a class="doc-card reveal" href="img/prestasi/prestasi3.jpg" target="_blank">
+            <a class="doc-card reveal" href="Prestasi3.jpeg" target="_blank">
               <img src="Prestasi3.jpeg" alt="Prestasi 3">
               <div class="doc-info">
                 <h3>Generasi Indonesia Ambassador</h3>
@@ -351,11 +312,12 @@
           </div>
         </div>
 
+        <!-- CV -->
         <div class="tab-panel" id="cv">
           <div class="cv-card reveal">
             <div class="cv-left">
               <h3>📄 CV - Ringga Budi Utama</h3>
-              <p>The latest CV contains a summary of profile, education, experience, skills, and projects.</p>
+              <p>Latest CV includes profile, skills, and project summary.</p>
             </div>
             <div class="cv-actions">
               <a class="btn primary" href="cv.pdf" download>⬇ Download CV</a>
@@ -364,49 +326,75 @@
           </div>
         </div>
 
+        <!-- Community -->
         <div class="tab-panel" id="komunitas">
           <div class="community-grid">
-            <a class="community-card reveal" href="img/komunitas/kegiatan1.jpg" target="_blank">
-              <img src="komunitas1 (2).jpeg" alt="Kegiatan Komunitas 1">
-              <div class="community-info"><h3>POLINEMA MENGAJAR</h3></div>
+            <a class="community-card reveal" href="komunitas1 (2).jpeg" target="_blank">
+              <img src="komunitas1 (2).jpeg" alt="Komunitas 1">
+              <div class="community-info"><h3>Polinema Mengajar</h3></div>
             </a>
-            <a class="community-card reveal" href="img/komunitas/kegiatan2.jpg" target="_blank">
-              <img src="KOMUNITAS2.jpeg" alt="Kegiatan Komunitas 2">
-              <div class="community-info"><h3>IT Dept English Community</h3></div>
+
+            <a class="community-card reveal" href="KOMUNITAS2.jpeg" target="_blank">
+              <img src="KOMUNITAS2.jpeg" alt="Komunitas 2">
+              <div class="community-info"><h3>English Community</h3></div>
             </a>
-            <a class="community-card reveal" href="img/komunitas/kegiatan3.jpg" target="_blank">
-              <img src="KOMUNITAS 3.jpeg" alt="Kegiatan Komunitas 3">
+
+            <a class="community-card reveal" href="KOMUNITAS 3.jpeg" target="_blank">
+              <img src="KOMUNITAS 3.jpeg" alt="Komunitas 3">
               <div class="community-info"><h3>Remaja Masjid Ar-Ridho</h3></div>
             </a>
-            <a class="community-card reveal" href="img/komunitas/kegiatan4.jpg" target="_blank">
-              <img src="KOMUNITAS 4.jpeg" alt="Kegiatan Komunitas 4">
-              <div class="community-info"><h3>Workshop & Riset Informatika</h3></div>
+
+            <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
+              <img src="KOMUNITAS 4.jpeg" alt="Komunitas 4">
+              <div class="community-info"><h3>Workshop & Riset</h3></div>
+            </a>
+
+                 <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
+              <img src="KOMUNITAS5.jpeg" alt="Komunitas 4">
+              <div class="community-info"><h3>Himpunan Mahasiswa Jombang</h3></div>
+
+                   <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
+              <img src="KOMUNITAS6.jpg" alt="Komunitas 4">
+              <div class="community-info"><h3>Camp Boy 2 Kresna</h3></div>
+
+                   <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
+              <img src="KOMUNITAS7.jpg" alt="Komunitas 4">
+              <div class="community-info"><h3>Kresna Institute</h3></div>
+
+                   <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
+              <img src="KOMUNITAS8.jpeg" alt="Komunitas 4">
+              <div class="community-info"><h3>Pak Bagus Community</h3></div>
+            </a>
+            </a>
+            </a>
             </a>
           </div>
         </div>
 
+        <!-- Certification -->
         <div class="tab-panel" id="sertifikasi">
           <div class="tab-grid">
-            <a class="doc-card reveal" href="img/sertifikasi/sertif1.jpg" target="_blank">
-              <img src="img/sertifikasi/sertif1.jpg" alt="Sertifikasi 1">
-              <div class="doc-info"><h3>Sertifikasi 1</h3><p>Deskripsi singkat sertifikasi</p></div>
+            <a class="doc-card reveal" href="img/sertifikasi/se.jpg" target="_blank">
+              <img src="SERTIFIKAT1.jpg" alt="Sertifikasi 1">
+              <div class="doc-info"><h3>Public Speaking Certificate</h3><p>Short description</p></div>
             </a>
             <a class="doc-card reveal" href="img/sertifikasi/sertif2.jpg" target="_blank">
-              <img src="img/sertifikasi/sertif2.jpg" alt="Sertifikasi 2">
-              <div class="doc-info"><h3>Sertifikasi 2</h3><p>Deskripsi singkat sertifikasi</p></div>
+              <img src="SERTIFIKAT2.jpg" alt="Sertifikasi 2">
+              <div class="doc-info"><h3>Duta Generasi Indonesia Certificate</h3><p>Short description</p></div>
             </a>
           </div>
         </div>
 
+        <!-- Business -->
         <div class="tab-panel" id="bisnis">
           <div class="tab-grid">
             <div class="doc-card reveal">
-              <img src="img/bisnis/bisnis1.jpg" alt="Bisnis 1">
-              <div class="doc-info"><h3>Bisnis / Brand 1</h3><p>Deskripsi bisnis / layanan / produk kamu</p></div>
+              <img src="img/bisnis/bisnis1.jpg" alt="Business 1">
+              <div class="doc-info"><h3>Business / Brand</h3><p>Short description</p></div>
             </div>
             <div class="doc-card reveal">
-              <img src="img/bisnis/bisnis2.jpg" alt="Bisnis 2">
-              <div class="doc-info"><h3>Bisnis / Brand 2</h3><p>Deskripsi bisnis / layanan / produk kamu</p></div>
+              <img src="img/bisnis/bisnis2.jpg" alt="Business 2">
+              <div class="doc-info"><h3>Service / Product</h3><p>Short description</p></div>
             </div>
           </div>
         </div>
@@ -414,9 +402,9 @@
       </div>
     </section>
 
-    <!-- ✅ CONTACT SLIDE -->
+    <!-- ✅ CONTACT -->
     <section id="contact" class="page">
-      <div class="section">
+      <div class="section container">
         <h2 class="section-title reveal">Contact</h2>
 
         <div class="contact-card reveal">
@@ -440,16 +428,16 @@
     <p>© <span id="year"></span> Ringga Budi Utama</p>
   </footer>
 
-  <!-- Background Music -->
-  <audio id="bgMusic" loop>
-    <source src="lagu2.mp3" type="audio/mpeg">
-  </audio>
-  <button id="musicBtn" class="musicBtn">Music</button>
+<!-- ✅ Background Music -->
+<audio id="bgMusic" loop>
+  <source src="lagu4.mp3" type="audio/mpeg" />
+</audio>
 
-  <!-- ✅ Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<button id="musicBtn" class="musicBtn" aria-label="toggle music">Music</button>
 
+
+
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
