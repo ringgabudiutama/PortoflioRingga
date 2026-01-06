@@ -33,9 +33,23 @@
 
     <div class="nav-actions">
       <button id="themeBtn" class="themeBtn" aria-label="toggle theme">☀️</button>
-      <a href="#contact" class="btn primary nav-jump">Hire Me</a>
+
+      <a href="#contact" class="btn primary nav-jump navBtn">Hire Me</a>
+
+      <!-- ✅ HAMBURGER BUTTON (MOBILE) -->
+      <button id="menuBtn" class="menuBtn" aria-label="open menu">☰</button>
     </div>
   </header>
+
+  <!-- ✅ MOBILE MENU PANEL -->
+  <div id="mobileMenu" class="mobileMenu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#gallery" class="nav-link">Docs</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
 
   <!-- MAIN -->
   <main class="pages">
@@ -46,7 +60,7 @@
 
         <!-- LEFT TEXT -->
         <div class="homeLeft reveal">
-          <p class="homeHello">Hey, I'm <span>Ringga Budi Utama</span></p>
+          <p class="homeHello">Hey, I'm <span>Ringga</span></p>
 
           <h1 class="homeRole">A WEB DEVELOPER</h1>
           <p class="homeSubrole">with UI/UX & Graphic Design Skills</p>
@@ -80,9 +94,9 @@
           <a class="scrollDown nav-jump" href="#about">SCROLL DOWN</a>
         </div>
 
-        <!-- RIGHT EXPERIENCE / SERVICES -->
+        <!-- RIGHT EXPERIENCE -->
         <div class="homeRight reveal">
-          <h2 class="rightTitle">OPEN JOB WORK</h2>
+          <h2 class="rightTitle">JOB EXPERIENCES</h2>
 
           <div class="rightList">
             <div class="rightItem">
@@ -124,7 +138,7 @@
             <h3>Professional Summary</h3>
             <p>
               I am a Web Developer & Designer focused on creating clean and scalable digital products.
-              My work emphasizes structure, performance, and a strong visual identity.
+              My work emphasizes structure, performance, and strong visual identity.
               <br><br>
               I also actively join public speaking and ambassador programs—improving communication,
               leadership, and collaboration skills.
@@ -213,7 +227,7 @@
 
           <div class="projectCard reveal" data-cat="web">
             <div class="projectThumb">
-             
+              <img src="img/projects/web1.jpg" alt="Web Project">
             </div>
             <div class="projectBody">
               <h3>Corporate Portfolio Website</h3>
@@ -230,7 +244,7 @@
 
           <div class="projectCard reveal" data-cat="uiux">
             <div class="projectThumb">
-             
+              <img src="img/projects/uiux1.jpg" alt="UIUX Project">
             </div>
             <div class="projectBody">
               <h3>Mobile App UI/UX</h3>
@@ -247,7 +261,7 @@
 
           <div class="projectCard reveal" data-cat="design">
             <div class="projectThumb">
-            
+              <img src="img/projects/design1.jpg" alt="Design Project">
             </div>
             <div class="projectBody">
               <h3>Social Media Branding</h3>
@@ -331,7 +345,7 @@
           <div class="community-grid">
             <a class="community-card reveal" href="komunitas1 (2).jpeg" target="_blank">
               <img src="komunitas1 (2).jpeg" alt="Komunitas 1">
-              <div class="community-info"><h3>Polinema Mengajar</h3></div>
+              <div class="community-info"><h3>POLINEMA MENGAJAR</h3></div>
             </a>
 
             <a class="community-card reveal" href="KOMUNITAS2.jpeg" target="_blank">
@@ -348,39 +362,19 @@
               <img src="KOMUNITAS 4.jpeg" alt="Komunitas 4">
               <div class="community-info"><h3>Workshop & Riset</h3></div>
             </a>
-
-                 <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
-              <img src="KOMUNITAS5.jpeg" alt="Komunitas 4">
-              <div class="community-info"><h3>Himpunan Mahasiswa Jombang</h3></div>
-
-                   <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
-              <img src="KOMUNITAS6.jpg" alt="Komunitas 4">
-              <div class="community-info"><h3>Camp Boy 2 Kresna</h3></div>
-
-                   <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
-              <img src="KOMUNITAS7.jpg" alt="Komunitas 4">
-              <div class="community-info"><h3>Kresna Institute</h3></div>
-
-                   <a class="community-card reveal" href="KOMUNITAS 4.jpeg" target="_blank">
-              <img src="KOMUNITAS8.jpeg" alt="Komunitas 4">
-              <div class="community-info"><h3>Pak Bagus Community</h3></div>
-            </a>
-            </a>
-            </a>
-            </a>
           </div>
         </div>
 
         <!-- Certification -->
         <div class="tab-panel" id="sertifikasi">
           <div class="tab-grid">
-            <a class="doc-card reveal" href="img/sertifikasi/se.jpg" target="_blank">
-              <img src="SERTIFIKAT1.jpg" alt="Sertifikasi 1">
-              <div class="doc-info"><h3>Public Speaking Certificate</h3><p>Short description</p></div>
+            <a class="doc-card reveal" href="img/sertifikasi/sertif1.jpg" target="_blank">
+              <img src="img/sertifikasi/sertif1.jpg" alt="Sertifikasi 1">
+              <div class="doc-info"><h3>Certification 1</h3><p>Short description</p></div>
             </a>
             <a class="doc-card reveal" href="img/sertifikasi/sertif2.jpg" target="_blank">
-              <img src="SERTIFIKAT2.jpg" alt="Sertifikasi 2">
-              <div class="doc-info"><h3>Duta Generasi Indonesia Certificate</h3><p>Short description</p></div>
+              <img src="img/sertifikasi/sertif2.jpg" alt="Sertifikasi 2">
+              <div class="doc-info"><h3>Certification 2</h3><p>Short description</p></div>
             </a>
           </div>
         </div>
@@ -428,17 +422,13 @@
     <p>© <span id="year"></span> Ringga Budi Utama</p>
   </footer>
 
-<!-- ✅ Background Music -->
-<audio id="bgMusic" loop>
-  <source src="lagu4.mp3" type="audio/mpeg" />
-</audio>
-
-<button id="musicBtn" class="musicBtn" aria-label="toggle music">Music</button>
-
-
+  <!-- ✅ Background Music (optional) -->
+  <audio id="bgMusic" loop>
+    <source src="lagu4.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="musicBtn" class="musicBtn" aria-label="toggle music">Music</button>
 
   <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
